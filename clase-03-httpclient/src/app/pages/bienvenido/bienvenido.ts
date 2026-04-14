@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { Card } from '../../components/card/card';
 
 @Component({
   selector: 'app-bienvenido',
-  imports: [],
-  templateUrl: './bienvenido.html',
-  styleUrl: './bienvenido.css',
+  standalone: true,
+  imports: [Card],
+  templateUrl: './bienvenido.html'
 })
 export class Bienvenido {
 
@@ -26,12 +27,6 @@ export class Bienvenido {
       subtitulo: 'Código',
       imagen: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png',
       link: 'https://github.com'
-    },
-    {
-      titulo: 'Bootstrap',
-      subtitulo: 'CSS',
-      imagen: 'https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png',
-      link: 'https://getbootstrap.com'
     }
   ];
 }

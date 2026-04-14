@@ -1,1 +1,10 @@
-<p>bienvenido works!</p>
+<h2>Bienvenido</h2>
+
+@for (c of cards; track c) {
+    <app-card
+        [titulo]="c.titulo"
+        [subtitulo]="c.subtitulo"
+        [imagen]="c.imagen"
+        [link]="c.link">
+    </app-card>
+}
